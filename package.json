@@ -1,7 +1,7 @@
 {
   "name": "lichessjs",
   "version": "0.1.0",
-  "description": "",
+  "description": "A JavaScript library for interacting with the Lichess Bot/Board API",
   "main": "src/index.js",
   "dependencies": {
     "chess.js": "^0.11.0"
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "test": "echo GOOD"
   },
   "keywords": [],
   "author": "Fun Planet",
