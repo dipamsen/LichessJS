@@ -7,10 +7,10 @@ const currentGames = new Set()
 client.on("challenge", async (challenge) => {
   const game = await challenge.accept()
   currentGames.add(game)
-  game.on("myTurn", (game) => {
+  game.on("myTurn", () => {
     game.move('e4')
   })
-  game.on("end", (game) => {
+  game.on("end", () => {
     currentGames.delete(game)
   })
 })
