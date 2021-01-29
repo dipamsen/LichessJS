@@ -24,3 +24,6 @@ webpack.config.js
 test/
 tsconfig.json
 tslint.json
+
+# TODO
+TODO.md

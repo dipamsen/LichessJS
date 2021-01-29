@@ -20,7 +20,10 @@ class BaseClient extends EventEmitter {
       client.emit(data.type, object);
     });
   }
+  async challenge() {
+    // const data = await this.api.post(`https://lichess.org/api/challenge/${user}`);
 
+  }
 }
 
 module.exports = BaseClient;

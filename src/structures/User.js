@@ -2,6 +2,7 @@ class User {
   constructor(client, id) {
     Object.defineProperty(this, "client", { value: client });
     this.id = id;
+    this.update();
   }
   _patch(userData) {
     this.id = userData.id;
