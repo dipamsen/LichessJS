@@ -13,7 +13,7 @@ class Game extends EventEmitter {
   startStreaming() {
     const emitor = this.client.stream(`/api/${this.client.type}/game/stream/${this.id}`)
     emitor.on("data", data => {
-      console.log(data)
+      // console.log(data)
       let state
       switch (data.type) {
         case "gameFull": state = data.state; break;

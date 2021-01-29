@@ -18,7 +18,7 @@ class BaseClient extends EventEmitter {
     })
   }
   get(url) {
-    console.log(`GET`, url)
+    // console.log(`GET`, url)
     return new Promise((resolve, reject) => {
       const req = https.get(`https://lichess.org${url}`, {
         headers: { Authorization: `Bearer ${this.token}`, Accept: 'application/json' }
@@ -33,7 +33,7 @@ class BaseClient extends EventEmitter {
     })
   }
   post(url, data = {}) {
-    console.log(`POST`, url, data)
+    // console.log(`POST`, url, data)
     return new Promise((resolve, reject) => {
       const postData = qs.stringify(data)
       const req = https.request(`https://lichess.org${url}`, {
