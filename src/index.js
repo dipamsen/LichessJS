@@ -6,4 +6,4 @@ module.exports = {
   // Other Structs
   Challenge: require("./structures/Challenge"),
   Game: require("./structures/Game"),
-}
+};

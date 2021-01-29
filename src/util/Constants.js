@@ -4,6 +4,6 @@ const Events = {
   "challenge": "challenge",
   "challengeDeclined": "challenge",
   "challengeCanceled": "challenge"
-}
+};
 
-module.exports = { Events }
+module.exports = { Events };

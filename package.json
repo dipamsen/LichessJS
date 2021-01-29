@@ -10,9 +10,9 @@
     "eslint": "^7.18.0"
   },
   "scripts": {
+    "test": "echo GOOD",
     "lint": "eslint",
-    "lint:fix": "eslint --fix",
-    "test": "echo GOOD"
+    "lint:fix": "eslint --fix"
   },
   "bugs": {
     "url": "https://github.com/dipamsen/LichessJS/issues",
