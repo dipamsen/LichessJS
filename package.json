@@ -1,6 +1,6 @@
 {
   "name": "lichessjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JavaScript library for interacting with the Lichess Bot/Board API",
   "main": "src/index.js",
   "dependencies": {
@@ -14,7 +14,16 @@
     "lint:fix": "eslint --fix",
     "test": "echo GOOD"
   },
+  "bugs": {
+    "url": "https://github.com/dipamsen/LichessJS/issues",
+    "email": "funplanet.m4f@gmail.com"
+  },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dipamsen/LichessJS.git"
+  },
+  "homepage": "https://github.com/dipamsen/LichessJS#readme",
   "author": "Fun Planet",
   "license": "MIT"
 }
