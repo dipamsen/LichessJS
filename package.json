@@ -4,7 +4,8 @@
   "description": "A JavaScript library for interacting with the Lichess Bot/Board API",
   "main": "src/index.js",
   "dependencies": {
-    "chess.js": "^0.11.0"
+    "chess.js": "^0.11.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.18.0"

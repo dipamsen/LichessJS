@@ -17,6 +17,10 @@ const client = new Lichess.BotClient();
 
 const currentGames = new Set();
 
+client.on("connected", async () => {
+  console.log("Connected to Account - ", client.user.username);
+});
+
 client.on("challenge", async (challenge) => {
   const game = await challenge.accept();
   currentGames.add(game);

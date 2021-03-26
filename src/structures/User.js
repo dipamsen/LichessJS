@@ -1,6 +1,6 @@
 class User {
   constructor(client, id) {
-    Object.defineProperty(this, "client", { value: client });
+    this.client = client;
     this.id = id;
     this.update();
   }
@@ -11,9 +11,18 @@ class User {
     this.lastOnline = new Date(userData.seenAt);
     this.followerCount = userData.nbFollowers;
   }
+  is(id) {
+    return this.id == id;
+  }
   async update() {
     const userData = await this.client.api.get(`/api/user/${this.id}`);
     this._patch(userData);
+  }
+  [Symbol.for("nodejs.util.inspect.custom")]() {
+    return `${this.client.type == "bot" ? "Bot" : ""}User(${this.id})`;
+  }
+  toString() {
+    return `${this.client.type == "bot" ? "Bot" : ""}User(${this.id})`;
   }
 }
 
