@@ -24,4 +24,4 @@
   - [ ] Get Broadcasts
   - [ ] Cloud Evaluation
 - [ ] Create Documentation and Types for each Class
-- [ ] Refactor `Game` and `Challenge`
+- [x] Refactor `Game` and `Challenge`

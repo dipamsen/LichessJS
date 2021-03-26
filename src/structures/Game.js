@@ -62,6 +62,14 @@ class Game extends EventEmitter {
     if (data.ok) return true;
     throw new Error(data.error);
   }
+  async abort() {
+    const data = await this.client.api.post(
+      `/api/${this.client.type}/game/${this.id}/abort`
+    );
+    if (data.ok) return true;
+    throw new Error(data.error);
+    //https://lichess.org/api/board/game/{gameId}/abort
+  }
   // @ts-ignore
   // eslint-disable-next-line no-unused-vars
   // on(event, listener) {

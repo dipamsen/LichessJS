@@ -1,3 +1,4 @@
+/// <reference path="../typings/index.d.ts" />
 const Lichess = require("../src");
 require("dotenv").config();
 

@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "description": "A JavaScript library for interacting with the Lichess Bot/Board API",
   "main": "src/index.js",
+  "types": "./typings/index.d.ts",
   "dependencies": {
     "chess.js": "^0.11.0",
     "dotenv": "^8.2.0"
